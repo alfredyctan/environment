@@ -11,7 +11,7 @@ do
     apt-cache madison docker-ce
     sudo apt-get install docker-ce
 
-	sudo usermod -G docker atyc
+	sudo usermod -G docker $USER
 	docker info
 	docker run hello-world
 
