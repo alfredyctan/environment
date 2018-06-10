@@ -1,5 +1,6 @@
 #!/bin/sh
-USER=$1
+ENV=$1
+USER=$2
 
 sudo mkdir -p /opt/sys
 sudo chown -R ${USER}:docker /opt/sys
