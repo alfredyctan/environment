@@ -11,8 +11,8 @@ sudo apt-key fingerprint 0EBFCD88
 echo 'sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"'
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
-echo "apt-cache madison docker-ce"
-apt-cache madison docker-ce
+echo "sudo apt-cache madison docker-ce"
+sudo apt-cache madison docker-ce
 
 echo "sudo apt-get install -y docker-ce"
 sudo apt-get install -y docker-ce
