@@ -21,7 +21,7 @@ rm -f current
 ln -s /usr/lib/jvm/java-8-openjdk-amd64 current
 echo "linked jdk to vendor directory"
 
-if [ ! -r "~/.bash_profile" ] || [ -z "`grep contineo.profile ~/.bash_profile`" ]; then 
+if [ ! -r ".bash_profile" ] || [ -z "`grep contineo.profile ~/.bash_profile`" ]; then 
 	echo ". /opt/sys/script/profile/contineo.profile $ENV" >> ~/.bash_profile; 
 fi;
 echo "added profile"
