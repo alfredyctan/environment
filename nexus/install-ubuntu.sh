@@ -3,6 +3,8 @@
 VERSION=${1:-3.12.0-01}
 INSTALL_DIR=${2:-"/opt/sys/vendor/nexus"}
 
+PWD=`pwd`
+
 sudo groupadd nexus
 sudo useradd -g nexus nexus
 
@@ -14,7 +16,7 @@ rm -f nexus-${VERSION}-unix.tar.gz
 ln -s nexus-${VERSION} current
 sudo chown -R nexus:nexus $INSTALL_DIR
 
-
+cd $PWD
 sudo cp nexus.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable nexus.service
