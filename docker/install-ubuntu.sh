@@ -23,8 +23,8 @@ sudo apt-get install -y docker-ce
 echo "sudo usermod -G docker $USER"
 sudo usermod -G docker $USER
 
-echo "docker info"
-docker info
+echo "sudo docker info"
+sudo docker info
 
-echo "docker run hello-world"
-docker run hello-world
+echo "sudo docker run hello-world"
+sudo docker run hello-world
