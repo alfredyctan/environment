@@ -4,7 +4,7 @@ VERSION=${1:-3.12.0-01}
 INSTALL_DIR=${2:-"/opt/sys/vendor/nexus"}
 
 sudo groupadd nexus
-sudo useradd -g nexus nexus
+sudo useradd -g nexus -d $INSTALL_DIR nexus
 
 mkdir -p $INSTALL_DIR
 wget https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-${VERSION}-unix.tar.gz -P $INSTALL_DIR
